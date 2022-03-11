@@ -114,10 +114,10 @@ class PowerBar(QtWidgets.QWidget):
         self._bar = _Bar(steps)
         layout.addWidget(self._bar)
 
-        # Create the QDial widget and set up defaults.
-        # - we provide accessors on this class to override.
         self._dial = QtWidgets.QDial()
+        # 给拨号盘设置刻度
         self._dial.setNotchesVisible(True)
+
         self._dial.setWrapping(False)
         self._dial.valueChanged.connect(self._bar._trigger_refresh)
 
@@ -156,6 +156,6 @@ class PowerBar(QtWidgets.QWidget):
 
 
 app = QtWidgets.QApplication(sys.argv)
-volume = PowerBar(["#5e4fa2", "#3288bd", "#66c2a5", "#abdda4", "#e6f598", "#ffffbf", "#fee08b", "#fdae61", "#f46d43", "#d53e4f", "#9e0142"])
+volume = PowerBar(["#49006a", "#7a0177", "#ae017e", "#dd3497", "#f768a1", "#fa9fb5", "#fcc5c0", "#fde0dd", "#fff7f3"])
 volume.show()
 app.exec()
