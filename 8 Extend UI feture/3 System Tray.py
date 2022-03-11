@@ -5,6 +5,8 @@ from PySide6.QtGui import QIcon, QAction
 from PySide6.QtWidgets import QApplication, QSystemTrayIcon, QMenu
 
 app = QApplication([])
+
+# 设置关闭窗口时，是否退出应用（不退出，就放到系统托盘）
 app.setQuitOnLastWindowClosed(False)
 
 # 创建一个 QIcon 对象
