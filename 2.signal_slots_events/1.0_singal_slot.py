@@ -9,6 +9,7 @@ slots（某些人翻译作：槽） 是信号（signal）的接收器。Python�
 import sys
 
 from PySide6.QtWidgets import QApplication, QMainWindow, QPushButton
+from PySide6.QtCore import Slot
 
 
 class MainWindow(QMainWindow):
@@ -24,6 +25,7 @@ class MainWindow(QMainWindow):
 
         self.setCentralWidget(button)
 
+    @Slot()  # 有时候会出现这个装饰器，说明这是一个接收信号的 slot，但在本例中，加不加这个装饰器都没有影响
     def the_button_was_clicked(self):
         print('Clicked!')
 
