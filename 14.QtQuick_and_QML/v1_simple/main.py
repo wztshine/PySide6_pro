@@ -2,6 +2,7 @@
 QML(Qt Modeling Language), 可以用来定义用户界面，它不使用 QtWidget 类，因为它使用自身来创建窗口UI，
 但是它可以使用其他如 QtCore, QtGui等。
 
+QML Reference: https://doc.qt.io/qt-6/qmlreference.html
 """
 
 import sys
