@@ -1,0 +1,26 @@
+/* 组件选择器，给窗口所有的 QListWidget 组件设置样式 */
+QListWidget {
+    color: #FFFFFF;
+    background-color: #33373B;
+}
+
+/* 双冒号是伪元素选择器，给 QListWidget 下面的所有 item 设置样式 */
+QListWidget::item {
+    height: 50px;
+}
+
+/* 单冒号是伪类选择器，当 item 为选中状态时，设置背景颜色 */
+QListWidget::item:selected {
+    background-color: #2ABf9E;
+}
+
+QLabel {
+    background-color: #FFFFFF;
+    qproperty-alignment: AlignCenter;
+}
+
+QPushButton {
+    background-color: #2ABf9E;
+    padding: 20px;
+    font-size: 18px;
+}
