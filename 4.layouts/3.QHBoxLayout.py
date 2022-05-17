@@ -12,9 +12,15 @@ class MainWindow(QMainWindow):
 
         layout = QHBoxLayout()
 
-        layout.addWidget(Color('red'))
-        layout.addWidget(Color('green'))
-        layout.addWidget(Color('blue'))
+        # 设置拉伸宽度，即每个组件占据的宽度
+        layout.addWidget(Color('red'), 1)
+        layout.addWidget(Color('green'), 2)
+        layout.addWidget(Color('blue'), 3)
+
+        # 可以不设置拉伸宽度，会默认均分布局大小
+        # layout.addWidget(Color('red'))
+        # layout.addWidget(Color('green'))
+        # layout.addWidget(Color('blue'))
 
         widget = QWidget()
         widget.setLayout(layout)
