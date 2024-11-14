@@ -28,6 +28,7 @@ class MainWindow(QMainWindow):
         dlg.setStandardButtons(QMessageBox.Yes | QMessageBox.No)
 
         # 设置对话框左侧的图标：问号样式
+        # 其实应该这样调用图标样式：QMessageBox.Icon.Information
         dlg.setIcon(QMessageBox.Information)
 
         # 执行对话框，关闭时会返回用户按下的按键信息
